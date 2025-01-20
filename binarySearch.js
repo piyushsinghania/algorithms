@@ -1,5 +1,5 @@
 const binarySearch = ({ key, array, start = 0, end = array.length - 1 }) => {
-  if (!(start <= end)) return -1;
+  if (start > end) return -1;
 
   const middle = Math.floor((start + end) / 2);
 
