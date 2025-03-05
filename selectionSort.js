@@ -3,7 +3,7 @@ const selectionSort = (arr) => {
     let minItemIndex = i;
 
     for (let j = i + 1; j < arr.length; j++) {
-      if (arr[minItemIndex] > arr[j]) {
+      if (arr[j] < arr[minItemIndex]) {
         minItemIndex = j;
       }
     }
