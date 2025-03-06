@@ -20,6 +20,8 @@
 //   return fibonacci(n - 1) + fibonacci(n - 2);
 // };
 
+// Dynamic Programming
+// Time Complexity = O(n)
 const fibonacci = (n, memo = {}) => {
   if (n in memo) return memo[n];
 

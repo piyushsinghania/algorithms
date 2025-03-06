@@ -1,5 +1,7 @@
 // Given n, the total number of steps in a staircase, and the ability to climb either 1 step or 2 steps at a time, how many distinct ways can you reach the top?
 
+// Divide and Conquer
+// Time Complexity = O(2^n)
 // const countStaircaseWays = (n) => {
 //   if (n <= 0) return 0;
 //   if (n === 1) return 1;
@@ -8,6 +10,8 @@
 //   return countStaircaseWays(n - 1) + countStaircaseWays(n - 2);
 // };
 
+// Dynamic Programming
+// Time Complexity = O(n)
 const countStaircaseWays = (n, memo = {}) => {
   if (n in memo) return memo[n];
 
@@ -34,7 +38,7 @@ const countStaircaseWays = (n, memo = {}) => {
 //   return possibleWays[n];
 // };
 
-// Time Complexity - O(n) - Linear Time
+// Time Complexity = O(n) - Linear Time
 // const countStaircaseWays = (n) => {
 //   if (n <= 0) return 0;
 //   if (n === 1) return 1;

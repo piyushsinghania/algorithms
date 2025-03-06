@@ -1,3 +1,4 @@
+// Time Complexity = O(n^2)
 const bubbleSort = (arr) => {
   for (let i = arr.length - 1; i > 0; i--) {
     let swappedValues = false;

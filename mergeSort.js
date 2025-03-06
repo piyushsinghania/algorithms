@@ -27,6 +27,8 @@ const mergeTwoSortedArrays = (arrayOne, arrayTwo) => {
   return mergedArray;
 }
 
+// Dynamic Programming
+// Time Complexity = O(nlogn)
 const mergeSort = (array) => {
   if (array.length <= 1) return array;
 

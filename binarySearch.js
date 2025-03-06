@@ -1,3 +1,4 @@
+// Time Complexity = O(log n)
 const binarySearch = ({ key, array, start = 0, end = array.length - 1 }) => {
   if (start > end) return -1;
 

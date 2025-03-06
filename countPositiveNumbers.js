@@ -1,6 +1,6 @@
 // Given an array of numbers, count positive numbers
 
-// Time complexity - O(n)
+// Time Complexity = O(n)
 const countPositiveNumbers = (arr) => {
   let count = 0;
 
