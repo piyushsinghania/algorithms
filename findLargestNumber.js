@@ -6,11 +6,7 @@ const findLargestNumber = (array) => {
   const largestLeftNumber = findLargestNumber(array.slice(0, mid));
   const largestRightNumber = findLargestNumber(array.slice(mid));
 
-  if (largestLeftNumber > largestRightNumber) {
-    return largestLeftNumber;
-  } else {
-    return largestRightNumber;
-  }
+  return Math.max(largestLeftNumber, largestRightNumber);
 }
 
 const array = [3, 1, 5, 8, 9, 10, 4, 6, 2, 7];
