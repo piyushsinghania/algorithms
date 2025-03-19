@@ -2,27 +2,15 @@
 // Time complexity - O(n)
 // Dynamic Programming
 
-const delimiter = '::';
-
 const countPaths = (m, n, memo = {}) => {
   if (m <= 0 || n <= 0) return 0;
   if (m === 1 || n === 1) return 1;
 
-  const cellKey = `${m}${delimiter}${n}`;
-  if (memo[cellKey]) return memo[cellKey];
+  const key = `${m},${n}`;
+  if (memo[key]) return memo[key];
 
-  const leftCellKey = `${m - 1}${delimiter}${n}`
-  const rigthCellKey = `${m}${delimiter}${n - 1}`
-
-  const pathsToLeftCell = memo[leftCellKey] || countPaths(m - 1, n, memo);
-  const pathsToAboveCell = memo[rigthCellKey] || countPaths(m, n - 1, memo);
-  const totalPaths = pathsToLeftCell + pathsToAboveCell;
-
-  memo[leftCellKey] = pathsToLeftCell;
-  memo[rigthCellKey] = pathsToAboveCell;
-  memo[cellKey] = totalPaths;
-
-  return totalPaths;
+  memo[key] = countPaths(m - 1, n, memo) + countPaths(m, n - 1, memo);
+  return memo[key];
 }
 
 // Without Memoization
