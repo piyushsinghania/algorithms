@@ -1,4 +1,6 @@
 // Multiple Pointers
+// - use 2 or more pointers to keep track of positions
+// - update the pointer positions
 // Condition - Sorted Array
 // Time Complexity - O(n)
 const findPairWithSum = (arr, target) => {
