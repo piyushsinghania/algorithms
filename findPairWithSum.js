@@ -1,4 +1,5 @@
 // Multiple Pointers
+// Condition - Sorted Array
 // Time Complexity - O(n)
 const findPairWithSum = (arr, target) => {
   let left = 0;
