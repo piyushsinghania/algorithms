@@ -1,4 +1,5 @@
-const findGCD = (a, b) => {
+// Time Complexity - O(min(a, b))
+/* const findGCD = (a, b) => {
   if (a === 0) return b;
   if (b === 0) return a;
 
@@ -10,6 +11,15 @@ const findGCD = (a, b) => {
     }
     i--;
   }
+}; */
+
+// Recursive Approach
+// Time Complexity - O(log(min(a, b)))
+const findGCD = (a, b) => {
+  if (a === 0) return b;
+  if (b === 0) return a;
+
+  return findGCD(b, a % b);
 };
 
-console.log(findGCD(11, 121));
+console.log(findGCD(5, 15));
