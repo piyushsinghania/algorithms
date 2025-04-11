@@ -1,15 +1,15 @@
 // Multiple Pointers Approach
 // Time Complexity - O(n)
 const isPalindrome = (str) => {
-  let i = 0;
-  let j = str.length - 1;
+  let left = 0;
+  let right = str.length - 1;
 
-  while (i < j) {
-    if (str[i] !== str[j]) {
+  while (left < right) {
+    if (str[left] !== str[right]) {
       return false;
     }
-    i++;
-    j--;
+    left++;
+    right--;
   }
 
   return true;
