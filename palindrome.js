@@ -15,4 +15,7 @@ const isPalindrome = (str) => {
   return true;
 };
 
-console.log(isPalindrome('maam'));
+console.log('racecar:', isPalindrome('racecar'));
+console.log('madam:', isPalindrome('madam'));
+console.log('maam:', isPalindrome('maam'));
+console.log('hello:', isPalindrome('hello'));
