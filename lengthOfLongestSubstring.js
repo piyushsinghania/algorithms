@@ -2,7 +2,7 @@ const isUnique = (str) => {
   return new Set(str).size === str.length;
 };
 
-// Sliding Window Approach + Two pointer approach
+// Sliding Window Approach
 // Time Complexity - O(n^2) - Quadratic - Because of slice method
 const lengthOfLongestSubstring = (str) => {
   if (str.length <= 1) return str.length;
